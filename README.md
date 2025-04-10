@@ -1,16 +1,38 @@
-# chronos
+# ⏳ Chronos
 
-A new Flutter project.
+**Chronos** es una app móvil interactiva que combina entretenimiento y ciencia. A través de acertijos inspirados en la física cuántica, los usuarios exploran conceptos como el entrelazamiento y el colapso de estados de forma divertida y visual.
 
-## Getting Started
+> 🎮 Aprende jugando  
+> 🌌 Explora líneas temporales  
+> 🔐 Descifra mensajes cuánticos
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📲 Características
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Registro e inicio de sesión
+- Resolución de acertijos cuánticos
+- Sección educativa con simulaciones (como el Gato de Schrödinger)
+- Perfil de usuario y progreso guardado
+- Recursos adicionales para aprender más
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🧪 Conceptos clave
+
+- **Paradoja del Gato de Schrödinger**
+- **Entrelazamiento cuántico**
+
+---
+
+## 🚀 Tecnologías
+
+- Android (Plataforma objetivo)
+- Canva (Diseño de interfaz)
+
+---
+
+## Autora
+
+Julieth Gómez
+
