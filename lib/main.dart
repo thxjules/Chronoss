@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'pages/login.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'pages/register.dart';
+import 'firebase_options.dart';
 
-void main() => runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform, 
+  );
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -26,7 +34,7 @@ class HomeScreen extends StatelessWidget {
       body: Stack(
         children: [
           Positioned.fill(
-            top: 100, //margen para bajar el logo
+            top: 0, //margen para bajar el logo
             child: Image.asset(
               'assets/logo1.jpg', //logo chronos
               fit: BoxFit.contain,
@@ -41,6 +49,7 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
+                  
                   //botón login
                   customButton('Accede al Portal', const Color(0xFFC6AFEF), () {
                     Navigator.push(
@@ -55,7 +64,7 @@ class HomeScreen extends StatelessWidget {
                   customButton('Atomiza tu fusión', Colors.white, () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Login()),
+                      MaterialPageRoute(builder: (context) => Register()),
                     );
                   }),
 

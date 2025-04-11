@@ -16,6 +16,7 @@ class MyTextField extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25.0),
       child: TextField(
+        controller: controller,
           obscureText: obscureText,
           decoration: InputDecoration(
             enabledBorder: OutlineInputBorder(
@@ -25,7 +26,6 @@ class MyTextField extends StatelessWidget {
               borderSide:
                   BorderSide(color: const Color.fromARGB(255, 162, 128, 240)),
             ),
-            fillColor: const Color.fromARGB(255, 255, 255, 255),
             filled: false, //relleno del imput
             hintText: hintText,
           )),
